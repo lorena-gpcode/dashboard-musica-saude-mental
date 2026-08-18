@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hábitos Musicais & Saúde Mental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Hábitos Musicais & Saúde Mental</h1>
+            <p>Análise exploratória baseada no dataset MxMH Survey (Kaggle)</p>
+        </header>
+
+        <section class="stats-cards">
+            <div class="card">
+                <h3>Total de Respostas</h3>
+                <div class="value">736</div>
+                <div class="subtitle highlight-green">Amostra limpa</div>
+            </div>
+            <div class="card">
+                <h3>Pico de Ansiedade</h3>
+                <div class="value">19–25 <span class="unit">anos</span></div>
+                <div class="subtitle">Média de 6.13/10</div>
+            </div>
+            <div class="card">
+                <h3>Pico de Depressão</h3>
+                <div class="value">26–35 <span class="unit">anos</span></div>
+                <div class="subtitle">Média de 5.38/10</div>
+            </div>
+            <div class="card">
+                <h3>Efeito da Prática Musical</h3>
+                <div class="value">Neutro</div>
+                <div class="subtitle">Músicos e Ouvintes com mediana 5.0</div>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div>
+                        <h2>Sintomas por Faixa Etária</h2>
+                        <p>Média das pontuações (0 a 10) de Ansiedade e Depressão.</p>
+                    </div>
+                    <button class="btn-interpretacao">💡 Ver Interpretação</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div>
+                        <h2>TOC e Insônia por Perfil de Gênero</h2>
+                        <p>Média de sintomas em relação à intensidade dos estilos.</p>
+                    </div>
+                    <button class="btn-interpretacao">💡 Ver Interpretação</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-section" style="margin-top: 1.5rem;">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div>
+                        <h2>Horas Diárias de Música vs. Sintomas</h2>
+                        <p>Evolução da Ansiedade e Depressão conforme horas de escuta.</p>
+                    </div>
+                    <button class="btn-interpretacao">💡 Ver Interpretação</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="lineChart2"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div>
+                        <h2>Prática Ativa (Músicos) vs. Passivo</h2>
+                        <p>Níveis médios de Depressão por engajamento musical.</p>
+                    </div>
+                    <button class="btn-interpretacao">💡 Ver Interpretação</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="barChart2"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

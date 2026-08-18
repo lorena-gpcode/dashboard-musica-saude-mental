@@ -1,0 +1,57 @@
+{
+    "total_respostas": 616,
+    "idade_ansiedade": [
+        6.07,
+        6.15,
+        5.92,
+        5.43,
+        3.44
+    ],
+    "idade_depressao": [
+        4.57,
+        5.23,
+        5.57,
+        4.66,
+        2.82
+    ],
+    "pico_ansiedade": {
+        "faixa": "19 a 25",
+        "valor": 6.15
+    },
+    "pico_depressao": {
+        "faixa": "26 a 35",
+        "valor": 5.57
+    },
+    "perfil_toc": [
+        2.64,
+        2.44,
+        2.73,
+        2.77
+    ],
+    "perfil_insonia": [
+        3.67,
+        4.04,
+        4.82,
+        3.31
+    ],
+    "horas_ansiedade": [
+        5.63,
+        6.09,
+        5.95,
+        6.16
+    ],
+    "horas_depressao": [
+        4.51,
+        5.12,
+        4.99,
+        5.54
+    ],
+    "engajamento_labels": [
+        "Músico Ativo (Toca/Compõe)",
+        "Ouvinte Passivo"
+    ],
+    "engajamento_depressao": [
+        4.91,
+        4.88
+    ]
+}
