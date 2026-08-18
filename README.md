@@ -2,9 +2,6 @@
 
 Bem-vindo ao **Music & Mental Health Dashboard**, um projeto de análise de dados interativo que explora a correlação entre os hábitos musicais das pessoas e sua saúde mental.
 
-<img width="1571" height="856" alt="image" src="https://github.com/user-attachments/assets/33b34f60-4814-466c-a2dd-751f7692675e" />
-
-
 Este projeto foi construído utilizando dados reais da pesquisa *MxMH Survey (Music and Mental Health Survey)*, disponível na plataforma Kaggle: [Acessar Dataset no Kaggle](https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results).
 
 ---
@@ -16,31 +13,29 @@ A ideia principal do projeto é responder visualmente a perguntas como:
 * Ouvintes de determinados gêneros musicais sofrem mais com Insônia ou TOC?
 * Tocar instrumentos ativamente protege a mente contra a depressão melhor do que apenas ouvir?
 
-Para facilitar a resposta dessas perguntas, os dados brutos foram pré-processados e convertidos em um Dashboard visual dinâmico com gráficos intuitivos e uma funcionalidade de **Interpretação por IA** guiada.
+Para facilitar a resposta dessas perguntas, os dados brutos do Kaggle foram pré-processados, estruturados em formato otimizado (`data.json`) e convertidos em um Dashboard visual dinâmico com gráficos intuitivos e **Interpretação por IA** guiada.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-O projeto foi dividido e construído com as seguintes frentes de tecnologia:
-
-* **Processamento de Dados (Backend / Pipeline):**
-  * **Python:** Para baixar e manipular o CSV original.
-  * **Pandas:** Para limpar os dados brutos, calcular agregações, cruzamentos estatísticos e picos comportamentais. O resultado é salvo em um arquivo otimizado (`data.json`).
+* **Estrutura de Dados:**
+  * **JSON (`data.json`):** Arquivo estático otimizado contendo os dados pré-processados e agregados da pesquisa.
 * **Dashboard Visual (Frontend):**
-  * **HTML5 & Vanilla CSS (Flexbox/Grid):** Para estruturação do layout responsivo com visual *Dark Mode* moderno.
-  * **JavaScript:** Fetch API (para consumir os dados pré-processados de forma assíncrona).
-  * **Chart.js:** Para a renderização dos gráficos de linha e barra fluidos e interativos.
+  * **HTML5 & CSS3:** Layout moderno em *Dark Mode*, responsivo com Flexbox/Grid.
+  * **JavaScript (ES6+):** Consumo assíncrono do JSON via Fetch API e manipulação dinâmica da interface.
+  * **Chart.js:** Renderização interativa dos gráficos de linha e barra.
 * **Inteligência Artificial (Google Gemini):**
-  * **Design & Projeto Visual:** Todo o projeto visual da interface do dashboard foi desenvolvido e estruturado com o suporte do **Google Gemini**.
-  * **Código & Análises:** Auxílio na construção dos scripts em Python, lógica em JavaScript para consumo dos dados e geração automatizada de insights/interpretações visuais dos gráficos.
+  * **Design & Layout Visual:** Toda a estrutura visual do dashboard foi projetada com auxílio do **Google Gemini**.
+  * **Código Frontend:** Suporte no desenvolvimento do HTML, estilização CSS e lógica JavaScript para plotagem dos gráficos.
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-Como o site consome um arquivo `.json` local, execute um servidor HTTP local simples para evitar bloqueios de segurança (CORS) do navegador:
+Como o projeto é uma aplicação web estática, você tem duas opções para rodar:
 
-1. Faça o clone deste repositório:
+### Opção 1: Servidor Local (VS Code Live Server)
+1. Clone este repositório:
    ```bash
    git clone [https://github.com/SEU-USUARIO/music-mental-health-dashboard.git](https://github.com/SEU-USUARIO/music-mental-health-dashboard.git)
