@@ -2,6 +2,9 @@
 
 Bem-vindo ao **Music & Mental Health Dashboard**, um projeto de análise de dados interativo que explora a correlação entre os hábitos musicais das pessoas e sua saúde mental.
 
+<img width="1571" height="856" alt="image" src="https://github.com/user-attachments/assets/33b34f60-4814-466c-a2dd-751f7692675e" />
+
+
 Este projeto foi construído utilizando dados reais da pesquisa *MxMH Survey (Music and Mental Health Survey)*, disponível na plataforma Kaggle: [Acessar Dataset no Kaggle](https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results).
 
 ---
