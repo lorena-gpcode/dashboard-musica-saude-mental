@@ -19,8 +19,8 @@ Para facilitar a resposta dessas perguntas, os dados brutos do Kaggle foram pré
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Estrutura de Dados:**
-  * **JSON (`data.json`):** Arquivo estático otimizado contendo os dados pré-processados e agregados da pesquisa.
+ * **Estrutura de Dados:**
+  * **JSON (`data.json`):** Arquivo estático otimizado contendo os dados pré-processados e agregados a partir do dataset do **Kaggle**.
 * **Dashboard Visual (Frontend):**
   * **HTML5 & CSS3:** Layout moderno em *Dark Mode*, responsivo com Flexbox/Grid.
   * **JavaScript (ES6+):** Consumo assíncrono do JSON via Fetch API e manipulação dinâmica da interface.
